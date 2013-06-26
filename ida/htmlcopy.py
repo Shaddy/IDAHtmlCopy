@@ -14,8 +14,10 @@ class HtmlCopy:
         return data
 
     def snippet_to_html(self):
-        GenerateFile(OFILE_LST, "c:\\temp\\buffer.html", SelStart(), SelEnd(),  GENFLG_GENHTML)
-        data = file(r'c:\\temp\\buffer.html', 'rb').read()
+        import os
+        bridge_file = os.path.join(os.getenv('userprofile'), 'buffer.html')
+        GenerateFile(OFILE_LST, bridge_file, SelStart(), SelEnd(),  GENFLG_GENHTML)
+        data = file(bridge_file, 'rb').read()
 
         self.cb = HtmlClipboard()
         self.cb.PutFragment(self.modify_template(data))
