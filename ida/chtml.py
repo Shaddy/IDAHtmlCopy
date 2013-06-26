@@ -1,6 +1,8 @@
 import re
 import win32clipboard
 
+# This code has been imported from Phillip Pipe:
+# http://code.activestate.com/recipes/474121-getting-html-from-the-windows-clipboard/ 
 
 class HtmlClipboard:
 
