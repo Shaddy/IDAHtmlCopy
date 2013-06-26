@@ -1,4 +1,6 @@
 IDAHtmlCopy
 ===========
 
-This example allows you to directly copy a code snippet from your Hex-rays IDA window and paste on Word without losting the HTML format.
+This example allows you copy a code snippet from your Hex-Rays IDA to your clipboard without losting the HTML format.
+
+* This plugin requires having installed pywin32 package. (http://sourceforge.net/projects/pywin32/)
